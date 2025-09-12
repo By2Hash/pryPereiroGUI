@@ -28,80 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnAtras = new Button();
+            btnSubir = new Button();
             lblNombre = new Label();
-            btnAgregar = new Button();
-            textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // button1
+            // btnAtras
             // 
-            button1.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123237;
-            button1.Location = new Point(180, 182);
-            button1.Name = "button1";
-            button1.Size = new Size(49, 32);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = true;
+            btnAtras.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123237;
+            btnAtras.Location = new Point(180, 182);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(49, 32);
+            btnAtras.TabIndex = 0;
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += button1_Click;
             // 
-            // button2
+            // btnSubir
             // 
-            button2.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123236__1_;
-            button2.Location = new Point(249, 182);
-            button2.Name = "button2";
-            button2.Size = new Size(49, 32);
-            button2.TabIndex = 1;
-            button2.UseVisualStyleBackColor = true;
+            btnSubir.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123236__1_;
+            btnSubir.Location = new Point(249, 182);
+            btnSubir.Name = "btnSubir";
+            btnSubir.Size = new Size(49, 32);
+            btnSubir.TabIndex = 1;
+            btnSubir.UseVisualStyleBackColor = true;
+            btnSubir.Click += btnSubir_Click;
             // 
             // lblNombre
             // 
-            lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 9.7F);
-            lblNombre.Location = new Point(180, 104);
+            lblNombre.Location = new Point(180, 139);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(118, 17);
+            lblNombre.Size = new Size(118, 40);
             lblNombre.TabIndex = 2;
-            lblNombre.Text = "Ingrese su nombre";
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new Point(180, 153);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(118, 23);
-            btnAgregar.TabIndex = 3;
-            btnAgregar.Text = "button3";
-            btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(180, 124);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(118, 23);
-            textBox1.TabIndex = 4;
+            lblNombre.TextAlign = ContentAlignment.MiddleCenter;
+            lblNombre.Click += lblNombre_Click;
             // 
             // frmBotonera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 461);
-            Controls.Add(textBox1);
-            Controls.Add(btnAgregar);
             Controls.Add(lblNombre);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSubir);
+            Controls.Add(btnAtras);
             Name = "frmBotonera";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmBotonera";
+            Load += frmBotonera_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnAtras;
+        private Button btnSubir;
         private Label lblNombre;
-        private Button btnAgregar;
-        private TextBox textBox1;
     }
 }
