@@ -35,26 +35,26 @@
             // 
             // button1
             // 
-            button1.Location = new Point(116, 167);
+            button1.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123237;
+            button1.Location = new Point(133, 177);
             button1.Name = "button1";
-            button1.Size = new Size(63, 51);
+            button1.Size = new Size(50, 50);
             button1.TabIndex = 0;
-            button1.Text = "<";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(213, 168);
+            button2.Image = Properties.Resources.arrow_arrows_back_direction_left_navigation_right_icon_123236__1_;
+            button2.Location = new Point(205, 177);
             button2.Name = "button2";
             button2.Size = new Size(50, 50);
             button2.TabIndex = 1;
-            button2.Text = ">";
             button2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(168, 125);
+            label1.Location = new Point(167, 127);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 2;

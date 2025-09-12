@@ -124,4 +124,13 @@
   <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descarga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="arrow_arrows_back_direction_left_navigation_right_icon_123236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_arrows_back_direction_left_navigation_right_icon_123236.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_arrows_back_direction_left_navigation_right_icon_123236 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_arrows_back_direction_left_navigation_right_icon_123236 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_arrows_back_direction_left_navigation_right_icon_123237" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_arrows_back_direction_left_navigation_right_icon_123237.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

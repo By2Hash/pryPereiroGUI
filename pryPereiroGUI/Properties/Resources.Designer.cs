@@ -73,6 +73,36 @@ namespace pryPereiroGUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_arrows_back_direction_left_navigation_right_icon_123236 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_arrows_back_direction_left_navigation_right_icon_123236", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_arrows_back_direction_left_navigation_right_icon_123236__1_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_arrows_back_direction_left_navigation_right_icon_123236 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_arrows_back_direction_left_navigation_right_icon_123237 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_arrows_back_direction_left_navigation_right_icon_123237", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga {
             get {
                 object obj = ResourceManager.GetObject("descarga", resourceCulture);
