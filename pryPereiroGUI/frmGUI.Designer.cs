@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnBotonera = new Button();
             SuspendLayout();
+            // 
+            // btnBotonera
+            // 
+            btnBotonera.Location = new Point(12, 12);
+            btnBotonera.Name = "btnBotonera";
+            btnBotonera.Size = new Size(109, 23);
+            btnBotonera.TabIndex = 0;
+            btnBotonera.Text = "Abrir Botonera";
+            btnBotonera.UseVisualStyleBackColor = true;
             // 
             // frmControleGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(484, 461);
+            Controls.Add(btnBotonera);
             Name = "frmControleGUI";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Controles de Interfaz Grafica";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnBotonera;
     }
 }
