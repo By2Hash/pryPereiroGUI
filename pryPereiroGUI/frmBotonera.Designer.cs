@@ -78,6 +78,7 @@
             // 
             // btnPrimero
             // 
+            btnPrimero.Enabled = false;
             btnPrimero.Location = new Point(110, 182);
             btnPrimero.Name = "btnPrimero";
             btnPrimero.Size = new Size(64, 32);

@@ -46,10 +46,12 @@ namespace pryPereiroGUI
                 if (indice == 0)
                 {
                     btnSubir.Enabled = true;
+                    btnPrimero.Enabled = false;
 
                     if (indice < vecNombre.Length)
                     {
                         btnAtras.Enabled = false;
+                        btnUltimo.Enabled = true;
                     }
                 }
 
@@ -75,40 +77,41 @@ namespace pryPereiroGUI
                 {
 
                     btnAtras.Enabled = true;
+                    btnPrimero.Enabled = true;
+
 
                     if (indice >= 2)
                     {
                         btnSubir.Enabled = false;
+                        btnUltimo.Enabled = false;
                     }
 
                 }
 
-
-
-
-
-
-
-
-
-
+               
             }
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-                
-            lblNombre.Text = vecNombre[0];
 
-            
-            
+                lblNombre.Text = vecNombre[0];
+            if (btnPrimero.Enabled == true)
+            {
+                btnUltimo.Enabled = true;
+            }
+
         }
 
         private void btnUltimo_Click(object sender, EventArgs e)
-        {
-            lblNombre.Text = vecNombre[2];
+        {            
+                lblNombre.Text = vecNombre[2];
+
+            if(btnUltimo.Enabled == true)
+            {
+                btnPrimero.Enabled=true;
+            }
         }
     }
 }
