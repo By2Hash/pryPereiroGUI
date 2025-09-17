@@ -18,7 +18,7 @@ namespace pryPereiroGUI
         }
         string[] vecNombre = new string[3];
         int indice = 0;
-        
+
         private void frmBotonera_Load(object sender, EventArgs e)
         {
             vecNombre[0] = "Paula";
@@ -37,28 +37,78 @@ namespace pryPereiroGUI
         private void button1_Click(object sender, EventArgs e)
         {
             indice--;
-            
-            
-            if (vecNombre.Length >= indice)
+
+
+            if (indice < vecNombre.Length)
             {
                 lblNombre.Text = vecNombre[indice];
+
+                if (indice == 0)
+                {
+                    btnSubir.Enabled = true;
+
+                    if (indice < vecNombre.Length)
+                    {
+                        btnAtras.Enabled = false;
+                    }
+                }
+
+
             }
-            
-           
-            
+
+
+
+
         }
 
         private void btnSubir_Click(object sender, EventArgs e)
         {
 
             indice++;
-           
-            if (vecNombre.Length >= indice)
+
+            if (indice < vecNombre.Length)
             {
                 lblNombre.Text = vecNombre[indice];
-                
-            } 
+
+
+                if (vecNombre.Length >= indice)
+                {
+
+                    btnAtras.Enabled = true;
+
+                    if (indice >= 2)
+                    {
+                        btnSubir.Enabled = false;
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             
+                
+            lblNombre.Text = vecNombre[0];
+
+            
+            
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            lblNombre.Text = vecNombre[2];
         }
     }
 }
