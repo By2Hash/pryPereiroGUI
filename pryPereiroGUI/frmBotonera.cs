@@ -12,11 +12,12 @@ namespace pryPereiroGUI
 {
     public partial class frmBotonera : Form
     {
+
         public frmBotonera()
         {
             InitializeComponent();
         }
-        string[] vecNombre = new string[3];
+       public string[] vecNombre = new string[3];
         int indice = 0;
 
         private void frmBotonera_Load(object sender, EventArgs e)
@@ -26,6 +27,8 @@ namespace pryPereiroGUI
             vecNombre[2] = "Nico";
 
             lblNombre.Text = vecNombre[0];
+
+            
         }
 
         private void lblNombre_Click(object sender, EventArgs e)
@@ -100,6 +103,8 @@ namespace pryPereiroGUI
             if (btnPrimero.Enabled == true)
             {
                 btnUltimo.Enabled = true;
+                
+               
             }
 
         }
@@ -111,6 +116,7 @@ namespace pryPereiroGUI
             if(btnUltimo.Enabled == true)
             {
                 btnPrimero.Enabled=true;
+
             }
         }
     }

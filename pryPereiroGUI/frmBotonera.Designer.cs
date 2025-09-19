@@ -91,7 +91,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 461);
+            ClientSize = new Size(484, 304);
             Controls.Add(btnPrimero);
             Controls.Add(btnUltimo);
             Controls.Add(lblNombre);
@@ -99,7 +99,7 @@
             Controls.Add(btnAtras);
             Name = "frmBotonera";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmBotonera";
+            Text = "Botonera";
             Load += frmBotonera_Load;
             ResumeLayout(false);
         }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnBotonera = new Button();
+            lsbNombres = new ListBox();
             SuspendLayout();
             // 
             // btnBotonera
@@ -41,11 +42,23 @@
             btnBotonera.UseVisualStyleBackColor = true;
             btnBotonera.Click += btnBotonera_Click;
             // 
+            // lsbNombres
+            // 
+            lsbNombres.FormattingEnabled = true;
+            lsbNombres.ItemHeight = 15;
+            lsbNombres.Items.AddRange(new object[] { "_" });
+            lsbNombres.Location = new Point(12, 126);
+            lsbNombres.Name = "lsbNombres";
+            lsbNombres.Size = new Size(460, 94);
+            lsbNombres.TabIndex = 1;
+            lsbNombres.SelectedIndexChanged += lsbNombres_SelectedIndexChanged;
+            // 
             // frmControleGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 461);
+            Controls.Add(lsbNombres);
             Controls.Add(btnBotonera);
             Name = "frmControleGUI";
             StartPosition = FormStartPosition.CenterScreen;
@@ -56,5 +69,6 @@
         #endregion
 
         private Button btnBotonera;
+        private ListBox lsbNombres;
     }
 }
